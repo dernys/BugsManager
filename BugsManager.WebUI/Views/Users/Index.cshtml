@@ -1,0 +1,46 @@
+﻿@using BugsManager.Application.Features.Users.Queries.GetAllUsers;
+@model IEnumerable<GetAllUsersDto>
+
+@{
+    ViewData["Title"] = "Index";
+    string subForm = "_Form";
+}
+<partial name="AdminLTE/_ModalDelete" />
+<partial name="AdminLTE/_ModalForm" model="subForm" />
+
+
+<h1>Users</h1>
+
+
+<div class="card">
+    <div class="card-body table-responsive">
+        <table id="data-table" class="display table table-bordered table-hover" style="width:100%">
+            
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Surname)
+                    </th>
+
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="text" placeholder="Search" class="form-control" />
+                    </th>
+                    <th>
+                        <input type="text" placeholder="Search" class="form-control" />
+                    </th>
+                    <th> </th>
+                </tr>
+       </thead>
+            <tbody>
+            </tbody>
+</table>
+</div>
+</div>
+<script src="~/js/users/index.js" asp-append-version="true"></script>
+
