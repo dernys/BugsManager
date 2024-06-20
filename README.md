@@ -4,7 +4,7 @@ This repository contains the source code for the BugsManager API, built with ASP
 ## Clone the repository:
 
  ```bash
-   git clone https://github.com/dernys/Bugs.git Bugs
+   git clone https://github.com/dernys/BugsManager.git Bugs
    cd Bugs
 ```
 
